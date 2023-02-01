@@ -1,13 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>I am hosted with Github Pages</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Lucy Zhang, A runner" />
+    <meta
+      property="og:description"
+      content="Welcome to Lucy Zhang's runner world"
+    />
+    <meta property="og:image" content="./img/lucyPortrait3-4.jpg" />
+    <title>Lucy Zhang</title>
+    <script
+      src="https://kit.fontawesome.com/b7f3e614f8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <div class="demoSticker" title="Switch Light">
+          <a href="#">
+            <!-- <i class="fa-solid fa-lightbulb"></i> -->
+            <i class="fa fa-lightbulb-o"></i>
+          </a>
+        </div>
+        <header class="header">
+          <ul class="iconMenu" id="myTab">
+            <li class="iconBox">
+              <button class="iconBoxBtn active" name="home">
+                <i class="fa fa-home"></i>
+                <h2>Home</h2>
+              </button>
+            </li>
+            <li class="iconBox">
+              <button class="iconBoxBtn" name="about">
+                <i class="fa fa-user"></i>
+                <h2>About</h2>
+              </button>
+            </li>
+            <li class="iconBox">
+              <button class="iconBoxBtn" name="portfolio">
+                <i class="fa fa-briefcase"></i>
+                <h2>Portfolio</h2>
+              </button>
+            </li>
+            <li class="iconBox">
+              <button class="iconBoxBtn" name="contact">
+                <i class="fa fa-envelope-open"></i>
+                <h2>Contact</h2>
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div class="tabContent tabPanelList" id="myTabContent">
+          <!-- home page -->
+          <div class="tabPane home pageActive" id="home">
+            <div class="color-block"></div>
+            <div class="homeContent">
+              <div class="portraitContainer">
+                <img src="./img/lucyPortrait3-4.jpg" alt="my portrait" />
+              </div>
+              <div class="descriptionContainer">
+                <h1 class="myName">
+                  我是Lucy Zhang
+                  <span>A RUNNER</span>
+                </h1>
+                <p>
+                  我的中文名叫张红艳，现在在澳大利亚。我从2014年开始跑步，虽然开始跑的很慢，但是我开始了。慢慢的我喜欢上了跑步，喜欢听自己的脚步声和耳边的风声，喜欢进入到大自然中，用奔跑去看更多的风景，喜欢累并快乐的感觉，逐渐从开始的一公里到跑过百公里越野赛，当翻过一个个山头蓦然回首，那真的是自己跑过来的吗？
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- about page -->
+          <div class="tabPane about fade" id="about">
+            <div>
+              <div class="titleSection">
+                <h1>ABOUT ME</h1>
+                <span class="titleBackgroud">Lucy Zhang</span>
+              </div>
+              <section class="aboutMainContent">
+                <div class="container">
+                  <!-- the white personal infos box -->
+                  <div class="aboutPersonalInfoWhole">
+                    <div class="personalInfoLeft aboutContentWidth">
+                      <div class="personalInfoLeftContent">
+                        <div class="aboutH3Wrapper">
+                          <h3>personal infos</h3>
+                        </div>
+                        <div class="personalInfoDetailContainer">
+                          <ul>
+                            <li>
+                              <span class="title">First Name: </span>
+                              <span class="value">Lucy</span>
+                            </li>
+                            <li>
+                              <span class="title">Last name: </span>
+                              <span class="value">Zhang</span>
+                            </li>
+                            <li>
+                              <span class="title">Age: </span>
+                              <span class="value">48 Years</span>
+                            </li>
+                            <li>
+                              <span class="title">Nationality: </span>
+                              <span class="value">Chinese</span>
+                            </li>
+                            <li>
+                              <span class="title">Residence: </span>
+                              <span class="value">Australia</span>
+                            </li>
+                            <li>
+                              <span class="title">City: </span>
+                              <span class="value">Sydney</span>
+                            </li>
+                            <li>
+                              <span class="title">Phone: </span>
+                              <span class="value">+61421234567</span>
+                            </li>
+                            <li>
+                              <span class="title">Email: </span>
+                              <span class="value">623406357@qq.com </span>
+                            </li>
+                            <li>
+                              <span class="title">Wechat: </span>
+                              <span class="value">623406357</span>
+                            </li>
+                            <li>
+                              <span class="title">Languages: </span>
+                              <span class="value">Chinese,English</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personalInfoRight aboutContentWidth">
+                      <div class="personalInfoRightContent">
+                        <div class="achievementBox">
+                          <div class="achievementContent">
+                            <h3 class="achievementContentH3Plus">9</h3>
+                            <p>
+                              years running
+                              <span class="dBlock">experience</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="achievementBox">
+                          <div class="achievementContent">
+                            <h3 class="achievementContentH3Plus">15000</h3>
+                            <p>
+                              KMs running
+                              <span class="dBlock">distance</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="achievementBox">
+                          <div class="achievementContent">
+                            <h3 class="achievementContentH3Plus">17</h3>
+                            <p>
+                              Marathons
+                              <span class="dBlock">experience</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="achievementBox">
+                          <div class="achievementContent">
+                            <h3 class="achievementContentH3">1</h3>
+                            <p>
+                              UTA100
+                              <span class="dBlock">experience</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- the separator line -->
+                  <hr class="separator" />
+
+                  <div class="runningExperience">
+                    <div class="runningExpTitle">
+                      <h3>Running Experience</h3>
+                    </div>
+                    <div class="runningExpLeft">
+                      <div class="runningExpbox">
+                        <ul>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Oct. 2022</span>
+                            <h5 class="runningExpSubtitle">
+                              UTA100
+                              <span class="place">Blue Mountain</span>
+                            </h5>
+                            <p>Ultra-Trail Australia 100km</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Sep. 2022</span>
+                            <h5 class="runningExpSubtitle">
+                              Sydney Marathon
+                              <span class="place">Sydney</span>
+                            </h5>
+                            <p>Blackmores Sydney Marathon</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Jun. 2022</span>
+                            <h5 class="runningExpSubtitle">
+                              GWT Marathon
+                              <span class="place">NSW Newnes</span>
+                            </h5>
+                            <p>Glow Worm Tunnel Marathon</p>
+                          </li>
+
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Apr. 2022</span>
+                            <h5 class="runningExpSubtitle">
+                              Canberra Marathon
+                              <span class="place">Canberra</span>
+                            </h5>
+                            <p>The Canberra Times Marathon</p>
+                          </li>
+
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Jan. 2022</span>
+                            <h5 class="runningExpSubtitle">
+                              Vanke New Year Marathon
+                              <span class="place">Online</span>
+                            </h5>
+                            <p>2022 Vanke New Year Marathon</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="runningExpRight">
+                      <div class="runningExpbox">
+                        <ul>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Jun. 2019</span>
+                            <h5 class="runningExpSubtitle">
+                              Brisbane Marathon
+                              <span class="place">Brisbane</span>
+                            </h5>
+                            <p>McDonald's Brisbane Marathon</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Sep. 2018</span>
+                            <h5 class="runningExpSubtitle">
+                              Sydney Marathon
+                              <span class="place">Sydney</span>
+                            </h5>
+                            <p>Blackmores Sydney Marathon</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Jan. 2018</span>
+                            <h5 class="runningExpSubtitle">
+                              Hong Kong Marathon
+                              <span class="place">Hongkong</span>
+                            </h5>
+                            <p>Standard Chartered Hong Kong Marathon</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Sep. 2017</span>
+                            <h5 class="runningExpSubtitle">
+                              Beijing Marathon
+                              <span class="place">Beijing</span>
+                            </h5>
+                            <p>2017 Beijing Hyundai Beijing Marathon</p>
+                          </li>
+                          <li>
+                            <div class="icon">
+                              <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="runningExpYear">Dec. 2016</span>
+                            <h5 class="runningExpSubtitle">
+                              Shenzhen Marathon
+                              <span class="place">Shenzhen</span>
+                            </h5>
+                            <p>2016 Shenzhen International Marathon</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- portfolio page -->
+          <div class="tabPane portfolio fade" id="portfolio">
+            <div>
+              <div class="titleSection">
+                <h1>My Portfolio</h1>
+                <span class="titleBackgroud">RUNNING</span>
+              </div>
+            </div>
+            <div class="portfolioMain">
+              <div class="container">
+                <div class="portfolioTabContent">
+                  <ul class="PortfolioUl">
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-1_2023TAS.jpg"
+                          alt="2023 The overland track"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >The overland track 85km</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img src="./img/race-2.UTA.JPG" alt="2022 UTA100" />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2022 UTA 100</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-3.SYD2022.JPG"
+                          alt="2022 Sydney Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2022 Sydney Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-4.2022GWT.JPG"
+                          alt="2022 GWT Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2022 GWT Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-5.CAB2022.JPG"
+                          alt="2022 Canberra Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2022 Canberra Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-6.2019BNE.JPG"
+                          alt="2019 Brisbane Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2019 Brisbane Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-7.2018SYD.JPG"
+                          alt="2018 Sydney Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2018 Sydney Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-8.2018HK.JPG"
+                          alt="2018 Hongkong Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2018 Hongkong Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                    <li>
+                      <figure class="PortfolioPicture">
+                        <img
+                          src="./img/race-9.2017SZ.JPG"
+                          alt="2017 Shenzhen Half Marathon"
+                        />
+                        <div class="hoverConentWrapper">
+                          <span class="portfolioPictureTitle"
+                            >2017 Shenzhen Half Marathon</span
+                          >
+                        </div>
+                      </figure>
+                    </li>
+                  </ul>
+                  <div class="portfolioModal">
+                    <div class="portfolioModalDialog" id="portfolioModalDialog">
+                      <div class="portfolioModalContent">
+                        <button class="closeModal">
+                          <!-- <img src="./img/cancel.25908147.svg" alt="close image"> -->
+                          <i class="fa-regular fa-circle-xmark"></i>
+                        </button>
+                        <div class="portfolioModalBody">
+                          <div class="boxInner">
+                            <div class="portfolioModalShow">
+                              <figure>
+                                <figcaption>
+                                  <h3 id="raceTitle">
+                                    2023 The overland track
+                                  </h3>
+                                  <div class="figcaptionContent">
+                                    <div class="raceDataItem">
+                                      <i class="fa-solid fa-calendar-days"></i>
+                                      <span>Date</span>
+                                      :
+                                      <span class="value" id="raceDate"
+                                        >28/01/2023</span
+                                      >
+                                    </div>
+                                    <div class="raceDataItem">
+                                      <i class="fa-solid fa-location-dot"></i>
+                                      <span>Location</span>
+                                      :
+                                      <span class="value" id="raceLocation"
+                                        >Tasmania, AU</span
+                                      >
+                                    </div>
+                                    <div class="raceDataItem">
+                                      <i class="fa-solid fa-person-running"></i>
+                                      <span>Type</span>
+                                      :
+                                      <span class="value" id="raceType"
+                                        >Trail Running</span
+                                      >
+                                    </div>
+                                    <div class="raceDataItem">
+                                      <i class="fa-solid fa-road"></i>
+                                      <span>Distance</span>
+                                      :
+                                      <span class="value" id="raceDistance"
+                                        >85km</span
+                                      >
+                                    </div>
+                                  </div>
+                                </figcaption>
+                                <img
+                                  src="./img/race-1_2023TAS.jpg"
+                                  alt="Portfolio"
+                                  id="racePicture"
+                                />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- contact page -->
+          <div class="tabPane contact fade" id="contact">
+            <div class="titleSection">
+              <h1>GET IN TOUCH</h1>
+              <span class="titleBackgroud">contact</span>
+            </div>
+            <div class="container">
+              <div class="contactMainContent">
+                <div class="contactMainContentLeft">
+                  <h3>Dont' be shy!</h3>
+                  <p class="contactBriefing">
+                    Feel free to get in touch with me. I am always eager to run
+                    with new friends, try different routes, and meet new
+                    challenges.
+                  </p>
+                  <p class="contactDetails">
+                    <i class="fa fa-map"></i>
+                    <span>ADDRESS POINT</span>
+                    Meadowbank NSW 2114
+                  </p>
+                  <p class="contactDetails">
+                    <i class="fa fa-envelope-open"></i>
+                    <span>mail me</span>
+                    <a href="mailto:623406357@qq.com">623406357@qq.com</a>
+                  </p>
+                  <p class="contactDetails">
+                    <i class="fa fa-phone-square"></i>
+                    <span>call me</span>
+                    <a href="Tel: +216 21 184 010">+61 41521....</a>
+                  </p>
+                  <ul class="contactSocialList">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/hongyan.zhang.50115"
+                        target="_blank"
+                      >
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./img/wechat.jpg" target="_self">
+                        <i class="fa fa-weixin"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="contactMainContentRight">
+                  <form class="contactForm">
+                    <div class="contactFormContainer">
+                      <div class="contactNameContainer">
+                        <div class="contactNameContent">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="YOUR NAME"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="contactEmailContainer">
+                        <div class="contactEmailContent">
+                          <input
+                            type="email"
+                            name="user_email"
+                            placeholder="YOUR EMAIL"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="contactSubjectContainer">
+                        <div class="contactSubjectContent">
+                          <input
+                            type="text"
+                            name="subject"
+                            placeholder="YOUR SUBJECT"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="contactMessageContainer">
+                        <div class="contactMessageContent">
+                          <textarea
+                            name="message"
+                            placeholder="YOUR MESSAGE"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="contactSendMessage">
+                        <button type="submit" class="contactSendBtn">
+                          <span class="contactSendBtnText">Send Message</span>
+                          <span class="buttonIcon fa fa-send"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          © 2023 All rights reserved. Designed by Johnson
+        </footer>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>

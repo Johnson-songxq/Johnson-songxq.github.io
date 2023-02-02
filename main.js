@@ -114,7 +114,7 @@ const portfolioData = [
     raceLocation: "Shenzhen, China",
     raceType: "Road Running",
     raceDistance: "21.0975km",
-    racePicture: "race-9.2017SZ.jpg",
+    racePicture: "race-9.2017SZ.JPG",
   },
 ];
 

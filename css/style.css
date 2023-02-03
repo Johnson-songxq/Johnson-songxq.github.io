@@ -192,7 +192,6 @@ a {
   font-weight: 700;
   margin: 18px 0 10px;
   color: #ffb400;
-  text-align: center;
   padding-left: 70px;
   position: relative;
 }
@@ -949,6 +948,10 @@ a {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   margin: 8px 0;
